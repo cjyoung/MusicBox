@@ -7,8 +7,8 @@
     <ProjectGuid>{07C84B53-5DB0-430A-AB22-94667E8CBC61}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MusicBox</RootNamespace>
-    <AssemblyName>MusicBox</AssemblyName>
+    <RootNamespace>LaVie</RootNamespace>
+    <AssemblyName>LaVie.MusicBox</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
