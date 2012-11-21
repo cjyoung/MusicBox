@@ -4,12 +4,12 @@ using System.Text;
 
 namespace LaVie
 {
-    class MusicBox
+    public class MusicBox
     {
         /// <summary>
         /// Possible notes; "s" for sharps, "b" for flats
         /// </summary>
-        internal enum Notes
+        public enum Notes
         {
             C0,
             Cs0,
@@ -160,7 +160,7 @@ namespace LaVie
         /// </summary>
         /// <param name="note">note to play</param>
         /// <param name="duration">duration in ms</param>
-        internal static void PlayNote(Notes note, int duration)
+        public static void PlayNote(Notes note, int duration)
         {
             Console.Beep(GetNote(note), duration);
         }
@@ -169,7 +169,7 @@ namespace LaVie
         /// Play some notes on start up
         /// </summary>
         /// <param name="tempo">(optional) tempo for notes</param>
-        internal static void StartUpSong(int tempo = 400)
+        public static void StartUpSong(int tempo = 400)
         {
             int m = (int)Math.Round(CalculateTimeMultiplier(tempo, 2));
             //dun dun da daaan
@@ -183,7 +183,7 @@ namespace LaVie
         /// play the first few notes of Beethoven's 5th
         /// </summary>
         /// <param name="tempo">(optional) tempo for notes</param>
-        internal static void Beethovens5th(int tempo = 132)
+        public static void Beethovens5th(int tempo = 132)
         {
             int m = (int)Math.Round(CalculateTimeMultiplier(tempo, 2));
             //beethoven's 5th
@@ -193,7 +193,7 @@ namespace LaVie
             PlayNote(Notes.D4, m * 4);
         }
 
-        internal static void LaVieEnRose()
+        public static void LaVieEnRose()
         {
             int m = 500;
 
@@ -215,7 +215,7 @@ namespace LaVie
             //ending 2
             LaVieEnRoseEnding2(m);
         }
-        internal static void WestminsterChimes(int tempo = 132)
+        public static void WestminsterChimes(int tempo = 132)
         {
             int m = (int)Math.Round(CalculateTimeMultiplier(tempo, 1));
 
@@ -243,7 +243,7 @@ namespace LaVie
 
             PlayNote(Notes.E3, m * 6);
         }
-        internal static void InTheHallOfTheMountainKing(int tempo = 138)
+        public static void InTheHallOfTheMountainKing(int tempo = 138)
         {
             int m = (int)Math.Round(CalculateTimeMultiplier(tempo, 2));
 
